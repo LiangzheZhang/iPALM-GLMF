@@ -1,0 +1,13 @@
+
+步骤：
+data = [排名 矩阵100*450]%导入排名数据
+save('position.mat', 'data')
+load('position.mat')
+positiontooverallaucfold(data)
+
+load('overallauc')
+mean_auc = mean(overallauc);  % 计算均值
+std_auc = std(overallauc);    % 计算标准差
+result = sprintf('%.4f+/-%.4f', mean_auc, std_auc);
+disp(result);  % 打印结果
+0.8942+/-0.0041

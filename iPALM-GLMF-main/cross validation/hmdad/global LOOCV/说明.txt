@@ -1,0 +1,4 @@
+≤Ω÷Ë:
+new_sorted_data = [Ranking matrix]
+save('new_position.mat', 'new_sorted_data');
+‘À––

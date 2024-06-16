@@ -1,0 +1,11 @@
+≤Ω÷Ë:
+data = [Ranking Matrix]£ª% Import ranking data
+save('new_position.mat', 'data')
+load('new_position.mat')
+positiontooverallaucfold(data)
+
+load('overallauc')
+mean_auc = mean(overallauc);  % Calculate the mean value
+std_auc = std(overallauc);    % Calculate standard deviation
+result = sprintf('%.4f+/-%.4f', mean_auc, std_auc);
+disp(result);  % Print results
